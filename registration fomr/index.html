@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">
+      Please fill out this form with the required information
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your name</label>
+        <label for="name-label">Name<input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label">Enter you email</label>
+        <label for="email-label">Email<input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="email that is not formatted correctly" placeholder="Enter email" required/></label>
+        <label id="number-label">Enter you phone number</label>
+        <label for="number-label">Number<input id="number" type="number" pattern="[0-9]" min="1" max="5" title="not accept non-numbers" placeholder="Enter you number" required/></label>
+        <fieldset id="group1">
+          <label><input type="radio" name="name1" value="1"></label>
+          <label><input type="radio" name="name1" value="1"></label>
+          <label><input type="radio" name="name1" value="1"></label>
+          <label><input type="checkbox" value="a"></label>
+        </fieldset>
+        <fieldset id="group2">
+          <label><input type="radio" name="name2" value="2"></label>
+          <label><input type="radio" name="name2" value="2"></label>
+          <label><input type="radio" name="name2" value="2"></label>
+          <label><input type="checkbox" value="b"></label>
+        </fieldset>
+        <label>
+          <select id="dropdown">
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+        </label>
+      </fieldset>
+        <label>Provide a bio:
+          <textarea></textarea>
+        </label>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>

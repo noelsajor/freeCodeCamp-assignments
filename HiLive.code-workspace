@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../../../../Applications/MAMP/htdocs/hiLive/wordpress/wp-content/themes/HiLive"
+	},
+	{
+		"path": "../../Citriom/404 animation"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "404 animation"
+  }
+}
