@@ -1,0 +1,309 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+    background-color: #c5beaf;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+ 
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  :root {
+    --primaryDarkColor: #353839;
+    --secondaryDarkColor: #a09586;
+    --secondaryDarkColor300: #cec8bd;
+    --secondaryDarkColor200: #eae5db;
+    --secondaryLightColor: #ffffff;
+    --tertiaryColorDark: #c29277;
+
+    --ff-primary: font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    --ff-Highlights:font-family: 'Allison', cursive;
+    --fw-regular: 400;
+    --fw-semi-bold:500;
+    --fw-bold:700;
+
+    --fs-300:
+    
+  }
+
+  /* 
+  General
+  */
+
+  .section{
+    max-width: 20%;
+  }
+
+  .narrow {
+    max-width: 15%;
+  }
+
+  .wide {
+    max-width: 50%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding-left: 35px;
+    padding-top: 35px;
+    
+  }
+
+  .center {
+    margin: auto;
+  }
+
+  .justified {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .alignRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .alignLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .image{
+    width: 50%;
+  }
+
+  .general-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  .nav-bar-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .centeredSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  .doubleButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  ul {
+    list-style: none;
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 30px;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 30px;
+  }
+
+  .doubleColumn-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 0 50px 0 50px;
+  }
+  
+
+  input {
+    border: 3px solid var(--primaryDarkColor);
+    color: var(--primaryDarkColor);
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .flexContainer{
+    display: flex;
+  }
+
+  /*
+  Typography
+  */
+
+  h1 {
+    font-size: 48px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: var(--secondaryLightColor);
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--secondaryDarkColor300);
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight:500;
+    text-transform: uppercase;
+    color: var(--primaryDarkColor);
+  }
+
+  p {
+    font-size: 12px;
+    font-weight:100;
+    color: var(--secondaryLightColor);
+  }
+
+  /*
+  section
+  */
+
+
+/* 
+buttons
+ */
+
+.primaryButton {
+  background-color: var(--primaryDarkColor);
+  color: var(--secondaryLightColor);
+  text-transform: uppercase;
+  padding: 5px 70px;
+  border: 0;
+}
+
+.secondaryButton {
+  border: 3px solid var(--primaryDarkColor);
+  color: var(--primaryDarkColor);
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 70px;
+}
+
+.coloredButton {
+  background-color: var(--secondaryDarkColor300);
+  color: var(--secondaryLightColor);
+  text-transform: uppercase;
+  padding: 5px 70px;
+  border: 0;
+}
+
+a {
+  color: var(--primaryDarkColor);
+  text-decoration: none;
+}
+
+.fa {
+  font-size:26px;
+  color: var(--primaryDarkColor);
+  padding: 5px;
+}
+
+.fa-bars{
+  display: none;
+}
+
+
+@media only screen and (max-width: 1120px) {
+  /* for computers */
+  .nav-bar{
+    justify-content: space-between;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .fa-bars{
+    display: block;
+    padding: 0 25px;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* for tablets */
+  .nav-bar{
+    justify-content: space-between;
+  }
+
+  .social{
+    display:none;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .fa-bars{
+    display: block;
+    padding: 0 10px;
+  }
+
+
+}
